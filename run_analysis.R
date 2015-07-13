@@ -66,4 +66,4 @@ tidy <- aggregate(dummy, list(combined_dataset$subject, combined_dataset$activit
 # head(tidy[1:5])
 # names(tidy)[1:2]
 colnames(tidy)[1:2] <- c("subject", "activity")
-write.table(tidy, "tidy.txt")
+write.table(tidy, "tidy.txt", row.names = F)
