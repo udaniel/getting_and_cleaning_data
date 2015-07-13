@@ -40,7 +40,7 @@ source('run_analysis.R')
 ```
 
 
-Then, you will get file, "tidy.csv", in your current directory.
+Then, you will get file, "tidy.txt", in your current directory.
 
 The tidy dataset has subject, activity and mean, standard deviation for all features.
 
