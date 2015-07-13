@@ -1,0 +1,33 @@
+---
+title: "CodeBook"
+output: html_document
+---
+
+## variables
+
+### subject
+
+ID for the participant
+
+
+### activity
+
+
+```{r, echo = F}
+activity_names <- read.table('./UCI HAR Dataset/activity_labels.txt')
+activity_names
+```
+
+
+### features
+
+Column numbers and names extracted from './UCI HAR Dataset/features.txt'
+
+
+```{r, echo = F}
+features <- read.table('./UCI HAR Dataset/features.txt')
+colnames(features) <- c("id", "name")
+features_row <- grep('mean\\(\\)|std\\(\\)', features$name)
+features[features_row, ]
+```
+

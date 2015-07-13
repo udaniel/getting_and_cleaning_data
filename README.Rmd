@@ -1,0 +1,46 @@
+---
+title: "README"
+output: html_document
+---
+
+# Coursera project for Getting and Cleaning Data class from JHU
+
+## download_file.R
+
+You should already have the original untidy dataset but by any chance if you don't,
+please download the dataset by typing
+
+```{r, eval = FALSE}
+source('download_file.R')
+```
+
+
+
+## run_analysis.R
+
+This is the main analysis script. As the given instruction by the class website, this script should perform
+
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, 
+independent tidy data set with the average of each variable
+for each activity and each subject.
+
+### run the analysis script
+
+Please change your directory to the place where the 'run_analysis.R' file is as well as the dataset file is in './UCI HAR Dataset/'.
+
+Then, run the following code
+
+```{r, eval=FALSE}
+source('run_analysis.R')
+```
+
+
+Then, you will get file, "tidy.csv", in your current directory.
+
+The tidy dataset has subject, activity and mean, standard deviation for all features.
+
